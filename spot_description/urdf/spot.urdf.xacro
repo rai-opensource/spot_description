@@ -1,4 +1,7 @@
 <?xml version="1.0" ?>
+
+<!-- Copyright (c) 2025 Robotics and AI Institute LLC dba RAI Institute. All rights reserved. -->
+
 <robot name="spot" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
   <!-- Macro for loading Spot -->

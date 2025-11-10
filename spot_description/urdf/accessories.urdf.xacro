@@ -1,4 +1,7 @@
 <?xml version="1.0"?>
+
+<!-- Copyright (c) 2025 Robotics and AI Institute LLC dba RAI Institute. All rights reserved. -->
+
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
 
   <xacro:if value="$(optenv SPOT_PACK 0)">

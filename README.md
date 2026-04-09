@@ -1,5 +1,24 @@
 <!-- Copyright (c) 2025 Robotics and AI Institute LLC dba RAI Institute. All rights reserved. -->
 
+# Repository Migration Notice
+
+> [!IMPORTANT]
+> This repository is moving to the **RAI-Opensource** GitHub organization in **about 2 weeks from April 9, 2026 (UTC)**.
+>
+> Current status: **pre-migration**.
+> Migration target org: <https://github.com/RAI-Opensource>
+>
+> What to do now:
+>
+> - Watch this repository for the final cutover update and destination repository link.
+> - Plan to update your git remote after the move:
+>
+>   ```bash
+>   git remote set-url origin <new-repository-url>
+>   ```
+>
+> - If you maintain downstream docs/scripts, prepare to update links from this repository to the new org.
+
 # spot_description
 
 This ROS 2 package contains the URDF files for Spot. There are two Spot models, referred to as `spot` and `spot_simple`, which primarily differ in the number of links in the base frame. There is also a `standalone_arm` model to view the Spot Arm independently. 

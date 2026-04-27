@@ -3,21 +3,22 @@
 # Repository Migration Notice
 
 > [!IMPORTANT]
-> This repository is moving to the **RAI-Opensource** GitHub organization in **about 2 weeks from April 9, 2026 (UTC)**.
+> This repository has moved to the **RAI-Opensource** GitHub organization!
 >
-> Current status: **pre-migration**.
-> Migration target org: <https://github.com/RAI-Opensource>
+> Current status: **Migrated**.
+>
+> - Migration target org: <https://github.com/RAI-Opensource>
+> - Previous target org: <https://github.com/bdaiinstitute>
 >
 > What to do now:
 >
-> - Watch this repository for the final cutover update and destination repository link.
-> - Plan to update your git remote after the move:
+> - Update your git remote:
 >
 >   ```bash
->   git remote set-url origin <new-repository-url>
+>   git remote set-url origin https://github.com/RAI-Opensource/spot_description
 >   ```
 >
-> - If you maintain downstream docs/scripts, prepare to update links from this repository to the new org.
+> - If you maintain downstream docs/scripts, update links from this repository to the new org.
 
 # spot_description
 
@@ -66,7 +67,7 @@ For the arm, we use the following mass values:
 + `arm_link_fngr` = 0.200 Kg 
 
 ## ROS 2 Control
-The Spot URDF also has the option to be constructed with ROS 2 control tags, which uses the hardware interface plugin from the [`spot_hardware_interface`](https://github.com/bdaiinstitute/spot_ros2/tree/main/spot_hardware_interface) package. To get the plain URDF file containing these tags, run
+The Spot URDF also has the option to be constructed with ROS 2 control tags, which uses the hardware interface plugin from the [`spot_hardware_interface`](https://github.com/rai-opensource/spot_ros2/tree/main/spot_hardware_interface) package. To get the plain URDF file containing these tags, run
 
 ```
 ros2 run xacro xacro -o ./urdf/out/spot_ros2_control.urdf ./urdf/spot.urdf.xacro add_ros2_control_tag:=True

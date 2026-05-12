@@ -1,25 +1,5 @@
 <!-- Copyright (c) 2025 Robotics and AI Institute LLC dba RAI Institute. All rights reserved. -->
 
-# Repository Migration Notice
-
-> [!IMPORTANT]
-> This repository has moved to the **RAI-Opensource** GitHub organization!
->
-> Current status: **Migrated**.
->
-> - Migration target org: <https://github.com/RAI-Opensource>
-> - Previous target org: <https://github.com/bdaiinstitute>
->
-> What to do now:
->
-> - Update your git remote:
->
->   ```bash
->   git remote set-url origin https://github.com/RAI-Opensource/spot_description
->   ```
->
-> - If you maintain downstream docs/scripts, update links from this repository to the new org.
-
 # spot_description
 
 This ROS 2 package contains the URDF files for Spot. There are two Spot models, referred to as `spot` and `spot_simple`, which primarily differ in the number of links in the base frame. There is also a `standalone_arm` model to view the Spot Arm independently. 
@@ -72,3 +52,12 @@ The Spot URDF also has the option to be constructed with ROS 2 control tags, whi
 ```
 ros2 run xacro xacro -o ./urdf/out/spot_ros2_control.urdf ./urdf/spot.urdf.xacro add_ros2_control_tag:=True
 ```
+
+## Migration Notice
+
+On April 28, 2026 this repository moved to the **RAI-Opensource** GitHub organization.  If you are still pulling from the previous bdaiinstitute GitHub organization, please update your git remote:
+   ```bash
+   git remote set-url origin https://github.com/RAI-Opensource/spot_description
+   ```
+
+If you maintain downstream docs/scripts, update links from this repository to the new org.
